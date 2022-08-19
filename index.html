@@ -11,7 +11,7 @@
     <h2>Program za računanje zapremine valjka</h2>
 
     <label for="baseRadius">Poluprečnik:</label><br>
-    <input type="number" id="baseRadious" name=""><br>
+    <input type="number" id="baseRadius" name=""><br>
 
     <label for="height">Visina:</label><br>
     <input type="number" id="height" name=""><br><br>
@@ -19,17 +19,18 @@
     <input type="submit" value="Izračunaj" onclick="cylinderCalculator()">
 
     <script>
-        const r_baseRadious = document.getElementById("baseRadious");
+        const r_baseRadious = document.getElementById("baseRadius");
         const H_height = document.getElementById("height");
 
         function cylunderCalculator()
         {
-            const r = parseInt(r_baseRadious.value);
+            const r = parseInt(r_baseRadius.value);
             const h = parseInt(H_height.value);
 
             const V = Math.pow(r,2) * Math.PI * h;
             alert('Zapremina valjka: '+V)
         }
+
     </script>
     
 </body>
