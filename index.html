@@ -18,7 +18,19 @@
 
     <input type="submit" value="Izračunaj" onclick="cylinderCalculator()">
 
+    <script>
+        const r_baseRadious = document.getElementById("baseRadious");
+        const H_height = document.getElementById("height");
 
+        function cylunderCalculator()
+        {
+            const r = parseInt(r_baseRadious.value);
+            const h = parseInt(H_height.value);
+
+            const V = Math.pow(r,2) * Math.PI * h;
+            alert('Zapremina valjka: '+V)
+        }
+    </script>
     
 </body>
 </html>
